@@ -1,0 +1,14 @@
+<html>
+   <body style="background: #efefef;">
+	
+      <form action = "{{ url_for('result') }}" method = "POST" class="survey" style="position:relative; left: 500px; right: 400px; background: #ffffff; width: 350px; height: 300px; text-align: center;">
+	     <h4>Выберите способ поиска</h4>
+	     <p><input type="radio" name="search type" value="Okapi BM25">Okapi BM25</p>
+	     <p><input type="radio" name="search type" value="Word2Vec">Word2Vec</p>
+		 <p><input type="radio" name="search type" value="Doc2Vec">Doc2Vec</p>
+		 <p>Query <input type ="text" name = "Query" /></p>
+         <p><input type = "submit" value = "search" /></p>
+      </form>
+      
+   </body>
+</html>
